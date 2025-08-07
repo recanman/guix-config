@@ -44,7 +44,7 @@
 
 (display "Base module exp21\n")
 
-%guix-base
+; %guix-base
 (display "Base module exp13\n")
 
 (export %user-name)
