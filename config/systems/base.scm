@@ -1,18 +1,15 @@
 (define-module (config systems base))
 
-(display ">Base: l3\n")
 (export %user-name)
 (export %guix-base-packages)
 (export %guix-base-services)
 (export %guix-base)
 
-(display ">Base: l9\n")
 (use-modules (config systems channels))
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
 (use-modules (guix) (guix packages))
-(display ">Base: l13\n")
-
 (use-modules (nongnu system linux-initrd))
+(display ">Base: l13\n")
 
 (use-package-modules ssh)
 (use-service-modules networking ssh)
