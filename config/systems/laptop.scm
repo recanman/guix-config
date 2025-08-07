@@ -1,8 +1,6 @@
-(define-module (config systems laptop)
+(define-module (config systems laptop))
 
-  #:use-module
-  (config systems base))
-
+(display "Laptop module loaded\n")
 (use-modules (config systems base) (config systems channels))
 (use-modules (gnu))
 
