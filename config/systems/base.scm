@@ -1,10 +1,8 @@
-(define-module (config systems base)
-  #:export
-  (%guix-base)
-  #:export
-  (%guix-base-packages)
-  #:export
-  (%user-name))
+(define-module (config systems base))
+
+(export %user-name)
+(export %guix-base-packages)
+(export %guix-base-services)
 
 (use-modules (config systems channels))
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
