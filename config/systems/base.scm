@@ -1,11 +1,9 @@
 (define-module (config systems base))
 
-(display "Base module loaded\n")
 (export %user-name)
 (export %guix-base-packages)
 (export %guix-base-services)
 (export %guix-base)
-(display "Base module exp1\n")
 
 (use-modules (config systems channels))
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
@@ -49,4 +47,7 @@
     (services %guix-base-services)
     (initrd microcode-initrd)))
 
+(display "Base module exp21\n")
+
 %guix-base
+(display "Base module exp13\n")
