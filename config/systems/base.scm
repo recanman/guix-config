@@ -9,14 +9,11 @@
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
 (use-modules (guix) (guix packages))
 (use-modules (nongnu system linux-initrd))
-(display ">Base: l13\n")
 
 (use-package-modules ssh)
 (use-service-modules networking ssh)
 
-(display ">Base: 20\n")
 (define %user-name "user")
-(display "username is: "%user-name"\n")
 
 (define %guix-base-packages
   (append %base-packages
