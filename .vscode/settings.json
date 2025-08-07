@@ -1,0 +1,8 @@
+{
+  "customLocalFormatters.formatters": [
+    {
+      "command": "find ~/Projects/guix-config -name *.scm -exec /usr/bin/schemat {} \\;",
+      "languages": ["scheme"]
+    }
+  ]
+}
