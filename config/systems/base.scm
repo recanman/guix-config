@@ -1,4 +1,6 @@
-(define-module (config systems base))
+(define-module (config systems base)
+  #:export
+  (%guix-base))
 
 (export %user-name)
 (export %guix-base-packages)
