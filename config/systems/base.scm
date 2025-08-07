@@ -1,14 +1,25 @@
 (define-module (config systems base))
 
+(display ">Base: l3\n")
+(export %user-name)
+(export %guix-base-packages)
+(export %guix-base-services)
+(export %guix-base)
+
+(display ">Base: l9\n")
 (use-modules (config systems channels))
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
 (use-modules (guix) (guix packages))
+(display ">Base: l13\n")
+
 (use-modules (nongnu system linux-initrd))
 
 (use-package-modules ssh)
 (use-service-modules networking ssh)
 
+(display ">Base: 20\n")
 (define %user-name "user")
+(display "username is: "%user-name"\n")
 
 (define %guix-base-packages
   (append %base-packages
@@ -42,14 +53,4 @@
     (services %guix-base-services)
     (initrd microcode-initrd)))
 
-(display "Base module exp21\n")
-
-; %guix-base
-(display "Base module exp13\n")
-
-(export %user-name)
-(export %guix-base-packages)
-(export %guix-base-services)
-(export %guix-base)
-
-(display "Base module exp14\n")
+%guix-base
