@@ -1,5 +1,6 @@
-(define-module (config systems channels)
-  (use-modules (guix channels)))
+(define-module (config systems channels))
+
+(use-modules (guix channels))
 
 (define %nonguix-channel
   (channel

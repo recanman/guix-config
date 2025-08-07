@@ -1,6 +1,7 @@
-(define-module (config systems laptop)
-  (use-modules (gnu))
-  (use-modules (config systems base) (config systems channels)))
+(define-module (config systems laptop))
+
+(use-modules (config systems base) (config systems channels))
+(use-modules (gnu))
 
 (define %laptop
   (operating-system

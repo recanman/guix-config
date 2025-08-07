@@ -1,14 +1,15 @@
 (define-module (config systems base)
-  (use-modules (config systems channels))
-  (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
-  (use-modules (guix) (guix packages))
-  (use-modules (nongnu system linux-initrd))
   #:export
   (%guix-base)
   #:export
   (%guix-base-packages)
   #:export
   (%user-name))
+
+(use-modules (config systems channels))
+(use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
+(use-modules (guix) (guix packages))
+(use-modules (nongnu system linux-initrd))
 
 (use-package-modules ssh)
 (use-service-modules networking ssh)
