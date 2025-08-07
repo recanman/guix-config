@@ -44,7 +44,7 @@
                    (supplementary-groups '("wheel" "netdev" "audio" "video")))
             %base-user-accounts))
     (packages %guix-base-packages)
-    (services %guix-base-services))
-  (initrd microcode-initrd))
+    (services %guix-base-services)
+    (initrd microcode-initrd)))
 
 %guix-base
