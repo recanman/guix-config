@@ -1,10 +1,5 @@
 (define-module (config systems base))
 
-(export %user-name)
-(export %guix-base-packages)
-(export %guix-base-services)
-(export %guix-base)
-
 (use-modules (config systems channels))
 (use-modules (gnu) (gnu services desktop) (gnu services guix) (gnu services xorg) (gnu system nss))
 (use-modules (guix) (guix packages))
@@ -51,3 +46,10 @@
 
 %guix-base
 (display "Base module exp13\n")
+
+(export %user-name)
+(export %guix-base-packages)
+(export %guix-base-services)
+(export %guix-base)
+
+(display "Base module exp14\n")
